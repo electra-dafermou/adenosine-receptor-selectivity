@@ -1,0 +1,110 @@
+==========================================================================
+s21_train_final_models.py
+==========================================================================
+python 3.10.11 . pandas 2.3.3 . numpy 2.2.6 . lightgbm 4.7.0
+seed 0 . σύνολο χαρακτηριστικών 'all' . στόχοι 'single'
+
+[in]  MASTER_matrix.csv.gz
+      8562 μόρια x 3608 στήλες
+      χαρακτηριστικά: 3510
+      στόχοι: 8
+
+[1/8] A1_regression  (regression, στήλη pchembl_A1)
+      μόρια με ετικέτα: 4286
+      στόχος: από 4.12 έως 10.52, σ = 1.015
+      [out] A1_regression.txt  1.62 MB
+      [out] A1_regression_imputer_medians.csv
+      [out] A1_regression_feature_names.txt
+      [out] A1_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[2/8] A1_classification  (classification, στήλη cls_A1_B_bin70)
+      μόρια με ετικέτα: 4286
+      κατανομή τάξεων: {0: 2799, 1: 1487}
+      [out] A1_classification.txt  1.90 MB
+      [out] A1_classification_imputer_medians.csv
+      [out] A1_classification_feature_names.txt
+      [out] A1_classification_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[3/8] A2A_regression  (regression, στήλη pchembl_A2A)
+      μόρια με ετικέτα: 4988
+      στόχος: από 4.00 έως 11.00, σ = 1.182
+      [out] A2A_regression.txt  1.62 MB
+      [out] A2A_regression_imputer_medians.csv
+      [out] A2A_regression_feature_names.txt
+      [out] A2A_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[4/8] A2A_classification  (classification, στήλη cls_A2A_B_bin70)
+      μόρια με ετικέτα: 4988
+      κατανομή τάξεων: {0: 2670, 1: 2318}
+      [out] A2A_classification.txt  1.90 MB
+      [out] A2A_classification_imputer_medians.csv
+      [out] A2A_classification_feature_names.txt
+      [out] A2A_classification_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[5/8] A2B_regression  (regression, στήλη pchembl_A2B)
+      μόρια με ετικέτα: 1748
+      στόχος: από 4.33 έως 10.08, σ = 1.025
+      [out] A2B_regression.txt  1.62 MB
+      [out] A2B_regression_imputer_medians.csv
+      [out] A2B_regression_feature_names.txt
+      [out] A2B_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[6/8] A2B_classification  (classification, στήλη cls_A2B_B_bin70)
+      μόρια με ετικέτα: 1748
+      κατανομή τάξεων: {0: 717, 1: 1031}
+      [out] A2B_classification.txt  1.91 MB
+      [out] A2B_classification_imputer_medians.csv
+      [out] A2B_classification_feature_names.txt
+      [out] A2B_classification_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[7/8] A3_regression  (regression, στήλη pchembl_A3)
+      μόρια με ετικέτα: 4307
+      στόχος: από 4.00 έως 10.70, σ = 1.205
+      [out] A3_regression.txt  1.62 MB
+      [out] A3_regression_imputer_medians.csv
+      [out] A3_regression_feature_names.txt
+      [out] A3_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[8/8] A3_classification  (classification, στήλη cls_A3_B_bin70)
+      μόρια με ετικέτα: 4307
+      κατανομή τάξεων: {0: 2231, 1: 2076}
+      [out] A3_classification.txt  1.90 MB
+      [out] A3_classification_imputer_medians.csv
+      [out] A3_classification_feature_names.txt
+      [out] A3_classification_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+==========================================================================
+ΜΟΝΤΕΛΑ   8 γράφτηκαν στο models
+ΚΟΣΤΟΣ    εκπαιδεύσεις μοντέλου: 8
+          χρόνος: 5.1 λεπτά
+ΕΛΕΓΧΟΙ   24/24 PASS
+
+ΠΡΟΣΟΧΗ   Τα μοντέλα αυτά είναι εκπαιδευμένα σε ΟΛΑ τα δεδομένα
+          και ΔΕΝ έχουν δικό τους σκορ. Κάθε νούμερο επίδοσης
+          προέρχεται από τη διασταυρούμενη επικύρωση κατά σκελετό
+          των s11b_strategies_full και s12_confidence_intervals.
+==========================================================================
