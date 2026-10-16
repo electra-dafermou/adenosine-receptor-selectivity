@@ -1,0 +1,27 @@
+{
+  "name": "A2A_A2B_selective_binary",
+  "target_column": "sel_A2A_A2B_bin10",
+  "task": "classification",
+  "feature_set": "ligand_open",
+  "n_features": 2264,
+  "n_training_molecules": 982,
+  "hyperparameters": {
+    "n_estimators": 500,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "random_state": 0,
+    "n_jobs": -1,
+    "verbose": -1
+  },
+  "trained_on": "all available molecules for this target",
+  "performance_note": "Αυτό το μοντέλο δεν έχει δικό του σκορ. Κάθε αναφερόμενη επίδοση προέρχεται από τη διασταυρούμενη επικύρωση κατά σκελετό των s11b_strategies_full και s12_confidence_intervals.",
+  "versions": {
+    "python": "3.10.11",
+    "lightgbm": "4.7.0",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6"
+  }
+}
