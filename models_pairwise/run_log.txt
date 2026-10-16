@@ -1,0 +1,220 @@
+==========================================================================
+s21_train_final_models.py
+==========================================================================
+python 3.10.11 . pandas 2.3.3 . numpy 2.2.6 . lightgbm 4.7.0
+seed 0 . σύνολο χαρακτηριστικών 'all' . στόχοι 'pairwise'
+
+[in]  MASTER_matrix.csv.gz
+      8562 μόρια x 3608 στήλες
+      χαρακτηριστικά: 3510
+      στόχοι: 18
+
+[1/18] A1_A2A_delta_regression  (regression, στήλη Dpchembl_A1_A2A)
+      μόρια με ετικέτα: 3013
+      στόχος: από -3.99 έως 3.84, σ = 1.243
+      [out] A1_A2A_delta_regression.txt  1.63 MB
+      [out] A1_A2A_delta_regression_imputer_medians.csv
+      [out] A1_A2A_delta_regression_feature_names.txt
+      [out] A1_A2A_delta_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[2/18] A1_A2A_selective_binary  (classification, στήλη sel_A1_A2A_bin10)
+      μόρια με ετικέτα: 3013
+      κατανομή τάξεων: {0: 1730, 1: 1283}
+      [out] A1_A2A_selective_binary.txt  1.91 MB
+      [out] A1_A2A_selective_binary_imputer_medians.csv
+      [out] A1_A2A_selective_binary_feature_names.txt
+      [out] A1_A2A_selective_binary_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[3/18] A1_A2A_direction_3class  (classification, στήλη sel_A1_A2A_3class)
+      μόρια με ετικέτα: 3013
+      κατανομή τάξεων: {0: 799, 1: 1730, 2: 484}
+      [out] A1_A2A_direction_3class.txt  5.54 MB
+      [out] A1_A2A_direction_3class_imputer_medians.csv
+      [out] A1_A2A_direction_3class_feature_names.txt
+      [out] A1_A2A_direction_3class_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[4/18] A1_A2B_delta_regression  (regression, στήλη Dpchembl_A1_A2B)
+      μόρια με ετικέτα: 802
+      στόχος: από -4.27 έως 4.37, σ = 1.316
+      [out] A1_A2B_delta_regression.txt  1.63 MB
+      [out] A1_A2B_delta_regression_imputer_medians.csv
+      [out] A1_A2B_delta_regression_feature_names.txt
+      [out] A1_A2B_delta_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[5/18] A1_A2B_selective_binary  (classification, στήλη sel_A1_A2B_bin10)
+      μόρια με ετικέτα: 802
+      κατανομή τάξεων: {0: 457, 1: 345}
+      [out] A1_A2B_selective_binary.txt  1.69 MB
+      [out] A1_A2B_selective_binary_imputer_medians.csv
+      [out] A1_A2B_selective_binary_feature_names.txt
+      [out] A1_A2B_selective_binary_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[6/18] A1_A2B_direction_3class  (classification, στήλη sel_A1_A2B_3class)
+      μόρια με ετικέτα: 802
+      κατανομή τάξεων: {0: 236, 1: 457, 2: 109}
+      [out] A1_A2B_direction_3class.txt  3.60 MB
+      [out] A1_A2B_direction_3class_imputer_medians.csv
+      [out] A1_A2B_direction_3class_feature_names.txt
+      [out] A1_A2B_direction_3class_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[7/18] A1_A3_delta_regression  (regression, στήλη Dpchembl_A1_A3)
+      μόρια με ετικέτα: 2173
+      στόχος: από -4.88 έως 4.27, σ = 1.478
+      [out] A1_A3_delta_regression.txt  1.63 MB
+      [out] A1_A3_delta_regression_imputer_medians.csv
+      [out] A1_A3_delta_regression_feature_names.txt
+      [out] A1_A3_delta_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[8/18] A1_A3_selective_binary  (classification, στήλη sel_A1_A3_bin10)
+      μόρια με ετικέτα: 2173
+      κατανομή τάξεων: {0: 1057, 1: 1116}
+      [out] A1_A3_selective_binary.txt  1.91 MB
+      [out] A1_A3_selective_binary_imputer_medians.csv
+      [out] A1_A3_selective_binary_feature_names.txt
+      [out] A1_A3_selective_binary_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[9/18] A1_A3_direction_3class  (classification, στήλη sel_A1_A3_3class)
+      μόρια με ετικέτα: 2173
+      κατανομή τάξεων: {0: 760, 1: 1057, 2: 356}
+      [out] A1_A3_direction_3class.txt  5.56 MB
+      [out] A1_A3_direction_3class_imputer_medians.csv
+      [out] A1_A3_direction_3class_feature_names.txt
+      [out] A1_A3_direction_3class_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[10/18] A2A_A2B_delta_regression  (regression, στήλη Dpchembl_A2A_A2B)
+      μόρια με ετικέτα: 982
+      στόχος: από -4.28 έως 3.52, σ = 1.356
+      [out] A2A_A2B_delta_regression.txt  1.63 MB
+      [out] A2A_A2B_delta_regression_imputer_medians.csv
+      [out] A2A_A2B_delta_regression_feature_names.txt
+      [out] A2A_A2B_delta_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[11/18] A2A_A2B_selective_binary  (classification, στήλη sel_A2A_A2B_bin10)
+      μόρια με ετικέτα: 982
+      κατανομή τάξεων: {0: 447, 1: 535}
+      [out] A2A_A2B_selective_binary.txt  1.84 MB
+      [out] A2A_A2B_selective_binary_imputer_medians.csv
+      [out] A2A_A2B_selective_binary_feature_names.txt
+      [out] A2A_A2B_selective_binary_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[12/18] A2A_A2B_direction_3class  (classification, στήλη sel_A2A_A2B_3class)
+      μόρια με ετικέτα: 982
+      κατανομή τάξεων: {0: 344, 1: 447, 2: 191}
+      [out] A2A_A2B_direction_3class.txt  4.00 MB
+      [out] A2A_A2B_direction_3class_imputer_medians.csv
+      [out] A2A_A2B_direction_3class_feature_names.txt
+      [out] A2A_A2B_direction_3class_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[13/18] A2A_A3_delta_regression  (regression, στήλη Dpchembl_A2A_A3)
+      μόρια με ετικέτα: 2054
+      στόχος: από -4.98 έως 4.12, σ = 1.582
+      [out] A2A_A3_delta_regression.txt  1.63 MB
+      [out] A2A_A3_delta_regression_imputer_medians.csv
+      [out] A2A_A3_delta_regression_feature_names.txt
+      [out] A2A_A3_delta_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[14/18] A2A_A3_selective_binary  (classification, στήλη sel_A2A_A3_bin10)
+      μόρια με ετικέτα: 2054
+      κατανομή τάξεων: {0: 933, 1: 1121}
+      [out] A2A_A3_selective_binary.txt  1.92 MB
+      [out] A2A_A3_selective_binary_imputer_medians.csv
+      [out] A2A_A3_selective_binary_feature_names.txt
+      [out] A2A_A3_selective_binary_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[15/18] A2A_A3_direction_3class  (classification, στήλη sel_A2A_A3_3class)
+      μόρια με ετικέτα: 2054
+      κατανομή τάξεων: {0: 730, 1: 933, 2: 391}
+      [out] A2A_A3_direction_3class.txt  5.41 MB
+      [out] A2A_A3_direction_3class_imputer_medians.csv
+      [out] A2A_A3_direction_3class_feature_names.txt
+      [out] A2A_A3_direction_3class_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[16/18] A2B_A3_delta_regression  (regression, στήλη Dpchembl_A2B_A3)
+      μόρια με ετικέτα: 554
+      στόχος: από -4.84 έως 4.59, σ = 1.771
+      [out] A2B_A3_delta_regression.txt  1.23 MB
+      [out] A2B_A3_delta_regression_imputer_medians.csv
+      [out] A2B_A3_delta_regression_feature_names.txt
+      [out] A2B_A3_delta_regression_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[17/18] A2B_A3_selective_binary  (classification, στήλη sel_A2B_A3_bin10)
+      μόρια με ετικέτα: 554
+      κατανομή τάξεων: {0: 231, 1: 323}
+      [out] A2B_A3_selective_binary.txt  1.33 MB
+      [out] A2B_A3_selective_binary_imputer_medians.csv
+      [out] A2B_A3_selective_binary_feature_names.txt
+      [out] A2B_A3_selective_binary_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+[18/18] A2B_A3_direction_3class  (classification, στήλη sel_A2B_A3_3class)
+      μόρια με ετικέτα: 554
+      κατανομή τάξεων: {0: 132, 1: 231, 2: 191}
+      [out] A2B_A3_direction_3class.txt  3.06 MB
+      [out] A2B_A3_direction_3class_imputer_medians.csv
+      [out] A2B_A3_direction_3class_feature_names.txt
+      [out] A2B_A3_direction_3class_metadata.json
+      [PASS] round-trip txt: μέγιστη απόκλιση 0.00e+00
+      [PASS] ονόματα χαρακτηριστικών: 3510 στο txt, 3510 στην εκπαίδευση, ίδια σειρά True
+      [PASS] διάμεσοι: 0 λείπουν, 0 εξ ολοκλήρου NaN
+
+==========================================================================
+ΜΟΝΤΕΛΑ   18 γράφτηκαν στο models_pairwise
+ΚΟΣΤΟΣ    εκπαιδεύσεις μοντέλου: 18
+          χρόνος: 15.3 λεπτά
+ΕΛΕΓΧΟΙ   54/54 PASS
+
+ΠΡΟΣΟΧΗ   Τα μοντέλα αυτά είναι εκπαιδευμένα σε ΟΛΑ τα δεδομένα
+          και ΔΕΝ έχουν δικό τους σκορ. Κάθε νούμερο επίδοσης
+          προέρχεται από τη διασταυρούμενη επικύρωση κατά σκελετό
+          των s11b_strategies_full και s12_confidence_intervals.
+==========================================================================
